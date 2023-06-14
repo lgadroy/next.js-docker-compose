@@ -5,7 +5,7 @@ services:
     container_name: next-app
     build:
       context: ./beta
-      dockerfile: prod-without-multistage.Dockerfile
+      dockerfile: prod.Dockerfile
       args:
         ENV_VARIABLE: ${ENV_VARIABLE}
         NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE}
